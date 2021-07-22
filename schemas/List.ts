@@ -12,7 +12,8 @@ export const List = list({
             },
         }),
         user: relationship({
-            ref: 'User.list',
+            ref: 'User.lists',
+            many: false,
         }),
         items: relationship({
             ref: 'Item.list',

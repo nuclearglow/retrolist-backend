@@ -8,7 +8,7 @@ export const User = list({
         name: text({ isRequired: true }),
         email: text({ isRequired: true, isUnique: true }),
         password: password(),
-        list: relationship({
+        lists: relationship({
             ref: 'List.user',
             many: true,
             ui: {
