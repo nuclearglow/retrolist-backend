@@ -1,0 +1,3 @@
+-   format and send mail
+-   insertSeedData
+-   roles: only logged in users may see their lists
