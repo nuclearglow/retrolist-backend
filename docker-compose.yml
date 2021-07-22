@@ -1,0 +1,12 @@
+version: "3"
+services:
+    db:
+        image: mongo:latest
+        container_name: mongodb-retrolist
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=mongodb
+            - MONGO_INITDB_ROOT_PASSWORD=mongodb
+        ports:
+            - "27019:27017"
+        volumes:
+            - /home/nuky/workspace/retrolist/retrolist-backend/mongodb-data:/data/db
