@@ -1,0 +1,17 @@
+{
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#096e1577"
+  },
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "git.ignoreLimitWarning": true
+}
