@@ -39,6 +39,7 @@ const keystoneConfig: KeystoneConfig = {
             origin: [process.env.FRONTEND_URL],
             credentials: true,
         },
+        port: 3000,
     },
     db: {
         adapter: 'mongoose',
