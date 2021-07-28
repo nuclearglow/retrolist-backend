@@ -3,7 +3,7 @@ import { list } from '@keystone-next/keystone/schema';
 
 export const Item = list({
     fields: {
-        name: text({
+        title: text({
             isRequired: true,
         }),
         quantity: integer({
@@ -17,7 +17,7 @@ export const Item = list({
     },
     ui: {
         listView: {
-            initialColumns: ['name', 'quantity', 'list'],
+            initialColumns: ['title', 'quantity', 'list'],
         },
     },
 });

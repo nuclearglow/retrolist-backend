@@ -3,13 +3,11 @@ import { list } from '@keystone-next/keystone/schema';
 
 export const List = list({
     fields: {
-        name: text({
+        title: text({
             isRequired: true,
         }),
-        description: text({
-            ui: {
-                displayMode: 'textarea',
-            },
+        subtitle: text({
+            isRequired: true,
         }),
         user: relationship({
             ref: 'User.lists',
