@@ -1,3 +1,10 @@
 -   format and send mail
 -   insertSeedData
 -   roles: only logged in users may see their lists
+-   Build & Deploy
+    -   Set up retrolist.svenvowe.de
+    -   Set up https for that
+    -   Set up the backend for deployment using reverse proxy
+    -   Prepare deployer to handle backend and frontend
+    -   Deployment script and SSH, copy this over from latest incarnation github svenvowe.de
+    -   Test it out, configure
