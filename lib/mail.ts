@@ -5,6 +5,7 @@ import { createTransport } from 'nodemailer';
 const transport = createTransport({
     host: process.env.MAIL_HOST,
     port: Number(process.env.MAIL_PORT),
+    ignoreTLS: true,
     auth: {
         user: process.env.MAIL_USER,
         pass: process.env.MAIL_PASS,

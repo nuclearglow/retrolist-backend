@@ -2,7 +2,8 @@
 -   insertSeedData
 -   roles: only logged in users may see their lists
 -   Build & Deploy
-    -   Set up retrolist.svenvowe.de
+    -   Set up production variable usage (NODE_ENV = 'production' etc.)
+    -   Set up api.svenvowe.de
     -   Set up https for that
     -   Set up the backend for deployment using reverse proxy
     -   Prepare deployer to handle backend and frontend

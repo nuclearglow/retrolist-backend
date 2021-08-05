@@ -10,3 +10,12 @@ services:
             - "27019:27017"
         volumes:
             - /home/nuky/workspace/retrolist/retrolist-backend/mongodb-data:/data/db
+    maildev:
+        image: maildev/maildev
+        environment:
+            - MAIL_SMTP_PORT=25
+            - MAIL_INCOMING_USER=rudolph.jones6@ethereal.email
+            - MAIL_INCOMING_PASS=jaCyFf3nuvduEJeVyp
+        ports:
+            - "1080:80"
+            - "2525:25"
