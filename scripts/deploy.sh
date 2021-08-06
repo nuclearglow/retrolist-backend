@@ -5,7 +5,7 @@ echo "Deploying..."
 ssh -T $DEPLOYMENT_USERNAME@$DEPLOYMENT_HOST << EOSSH
 cd $DEPLOYMENT_PATH
 git pull
-npm install
+npm ci
 EOSSH
 
 #cd $DEPLOYMENT_ECOSYSTEM_PATH
