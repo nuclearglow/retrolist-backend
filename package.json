@@ -1,16 +1,20 @@
 {
   "name": "retrolist-backend",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "author": "nuky",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "keystone-next",
     "debug": "NODE_ENV=development NODE_OPTIONS=--inspect keystone-next",
-    "seed-data": "keystone-next --seed-data"
+    "build": "keystone-next build",
+    "start": "keystone-next start",
+    "seed-data": "keystone-next --seed-data",
+    "deploy": "node ./scripts/deploy.js"
   },
   "eslintConfig": {
     "extends": "wesbos/typescript.js",
+    "ignorePatterns": "scripts/",
     "rules": {
       "@typescript-eslint/no-unsafe-assignment": 0,
       "@typescript-eslint/indent": [
