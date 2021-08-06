@@ -60,7 +60,6 @@ const keystoneConfig: KeystoneConfig = {
     // extendGraphqlSchema,
     // keystone ui settings
     ui: {
-        path: '/api',
         isAccessAllowed: ({ session }) => !!session?.data,
     },
     session: withItemData(statelessSessions(sessionConfig), {
