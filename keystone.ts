@@ -7,6 +7,7 @@ import {
 import { KeystoneConfig, KeystoneContext } from '@keystone-next/types';
 import 'dotenv/config';
 import { sendPasswordResetEmail } from './lib/mail';
+import { extendGraphqlSchema } from './mutations/index';
 import { Item } from './schemas/Item';
 import { List } from './schemas/List';
 import { User } from './schemas/User';
@@ -46,9 +47,6 @@ const keystoneConfig: KeystoneConfig = {
         url: process.env.DATABASE_URL,
         onConnect: async (context: KeystoneContext) => {
             console.log('connected to database');
-            // if (process.argv.includes('--seed-data')) {
-            //     await insertSeedData(context);
-            // }
         },
     },
     lists: createSchema({
@@ -57,7 +55,7 @@ const keystoneConfig: KeystoneConfig = {
         Item,
     }),
     // custom schema code here
-    // extendGraphqlSchema,
+    extendGraphqlSchema,
     // keystone ui settings
     ui: {
         isAccessAllowed: ({ session }) => !!session?.data,

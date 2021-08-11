@@ -1,4 +1,4 @@
-import { integer, relationship, text } from '@keystone-next/fields';
+import { checkbox, integer, relationship, text } from '@keystone-next/fields';
 import { list } from '@keystone-next/keystone/schema';
 
 export const Item = list({
@@ -9,6 +9,9 @@ export const Item = list({
         quantity: integer({
             defaultValue: 1,
             isRequired: true,
+        }),
+        done: checkbox({
+            defaultValue: false,
         }),
         list: relationship({
             ref: 'List.items',
