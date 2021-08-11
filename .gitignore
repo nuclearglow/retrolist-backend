@@ -67,3 +67,7 @@ junit.xml
 # Dockerized Database volumes
 mongodb-data/
 postgres-data/
+
+# Vim swap files
+.*.swp
+.*.swo
