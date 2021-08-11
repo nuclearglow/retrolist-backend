@@ -1,7 +1,5 @@
 -   format and send mail
--   insertSeedData
 -   roles: only logged in users may see their lists
 -   Build & Deploy
     -   Set up mailing using the official email
     -   Set up production variable usage (NODE_ENV = 'production' etc.)
-    -   Set up api.svenvowe.de

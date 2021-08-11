@@ -9,8 +9,7 @@
     "debug": "NODE_ENV=development NODE_OPTIONS=--inspect keystone-next",
     "build": "keystone-next build",
     "start": "keystone-next start",
-    "seed-data": "keystone-next --seed-data",
-    "deploy": "node ./scripts/deploy.js"
+    "seed-data": "keystone-next --seed-data"
   },
   "eslintConfig": {
     "extends": "wesbos/typescript.js",

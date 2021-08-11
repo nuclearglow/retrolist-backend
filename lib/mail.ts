@@ -6,6 +6,11 @@ const transport = createTransport({
     host: process.env.MAIL_HOST,
     port: Number(process.env.MAIL_PORT),
     ignoreTLS: process.env.NODE_ENV !== 'production',
+    secure: process.env.NODE_ENV === 'production',
+    tls: {
+        // do not fail on invalid certs
+        rejectUnauthorized: false,
+    },
     auth: {
         user: process.env.MAIL_USER,
         pass: process.env.MAIL_PASS,
