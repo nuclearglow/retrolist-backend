@@ -2,7 +2,7 @@ import { createAuth } from '@keystone-next/auth';
 import { config, createSchema } from '@keystone-next/keystone/schema';
 import {
     statelessSessions,
-    withItemData
+    withItemData,
 } from '@keystone-next/keystone/session';
 import { KeystoneConfig, KeystoneContext } from '@keystone-next/types';
 import 'dotenv/config';
@@ -40,7 +40,6 @@ const keystoneConfig: KeystoneConfig = {
             origin: [process.env.FRONTEND_URL],
             credentials: true,
         },
-        port: 3000,
     },
     db: {
         adapter: 'mongoose',

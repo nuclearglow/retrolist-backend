@@ -17,5 +17,5 @@ services:
             - MAIL_INCOMING_USER=rudolph.jones6@ethereal.email
             - MAIL_INCOMING_PASS=jaCyFf3nuvduEJeVyp
         ports:
-            - "1080:80"
+            - "7775:80"
             - "2525:25"
